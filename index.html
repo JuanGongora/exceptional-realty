@@ -1,11 +1,74 @@
-<html lang="en"><head>
+<!doctype html>
+<html lang="en">
+<!-- The lang code lets the browser know what language is
+inside of the site content
+-->
+<!-- All the content that is relevant to the browser and search engines
+is stored within the 'head' tags
+-->
+<head>
+  <!-- http://www.w3schools.com/html/html_charset.asp
+    To display an HTML page correctly, a web browser must know which
+    character set (character encoding) to use.
+    UTF-8 (Unicode) covers almost all of the characters
+    and symbols in the world; and works perfectly with HTML5.
+  -->
+  <!-- The HTML5 Standard: Unicode UTF-8
+Because the character sets in ISO-8859 was limited in size, and not compatible in multilingual environments,
+the Unicode Consortium developed the Unicode Standard.
+The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.
+Unicode enables processing, storage, and transport of text independent of platform and language.
+
+The default character encoding in HTML-5 is UTF-8.
+If an HTML5 web page uses a different character set than UTF-8, it should be specified in the <meta> tag like:
+
+Example:
+<meta charset="ISO-8859-1">
+-->
     <meta charset="UTF-8">
-    <title>Exceptional Realty Group - Luxury Homes - Market Report</title>
+    <!-- The Difference Between Unicode and UTF-8
+Unicode is a character set. UTF-8 is encoding.
+Unicode is a list of characters with unique decimal numbers (code points). A = 65, B = 66, C = 67, ....
+This list of decimal numbers represent the string "hello": 104 101 108 108 111
+Encoding is how these numbers are translated into binary numbers to be stored in a computer:
+UTF-8 encoding will store "hello" like this (binary): 01101000 01100101 01101100 01101100  01101111
+
+Character sets translates those characters into numbers.
+Encoding translates those numbers into binary code.
+-->
+    <title>Exceptional Realty Group - Luxury Homes - Index</title>
+    <!-- 'title' is what shows up at the browser tag and is also relevant to search engines. -->
 </head>
 <body>
+  <!-- All the content inside 'body' is relevant to the viewers of our site
+  such as text, links, and media. -->
+
   <h1>Exceptional</h1>
   <h2>Realty Group</h2>
-  <h3>Index</h3>
+<!-- Broswers will actually ignore white-space so in order to format it so that it
+won't in regards to text and such. Use these element tags:
+<p> for paragraphs
+Which allows for separation of line spacing above and below it to the browser.
+
+You can also for visual purposes put place-filler text inside a <p> tag by typing:
+lorem   Then press 'tab'
+
+If you want to move some text content that's on the same line to be right below:
+<br> for 'break'.
+-->
+
+<!-- links -->
+  <h3><a href="index.html">About</a></h3>
+  <a href="new-properties.html">New Properties</a>
+  <a href="real-estate-listings.html">Real Estate Listings</a>
+  <a href="market-report.html">Market Report</a>
+  <a href="contact.html">Contact</a>
+<!-- The above links are paths relative to local files
+     Below is a link that is relative to an external source that
+     is not part of our site.
+     target="_blank" opens a new tab to the link so that you don't leave your site.
+-->
+  <a href="http://portal.hud.gov/hudportal/HUD" target="_blank">H.U.D.</a>
 <!--
   The alt variable is for the visually impaired to have text
   read to them, as well as for search engines.
